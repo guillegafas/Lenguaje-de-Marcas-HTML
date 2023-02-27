@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .menu{
+        background-color: aqua;
+        text-decoration: none;
+        list-style: none;
+        overflow: hidden;
+        margin: 0px;
+
+    }
+
+    .menu2{
+        float: left;
+        padding: 30px;
+        margin: 10px;
+
+    }
+
+    .logo {
+        width: 40px;
+        float: left;
+        padding: 25px;
+    }
+
+    .menu2:hover {
+        background-color: beige;
+    }
+
+    
+    .caja{
+        display: flex;
+        
+    }
+
+    .row {
+        background-color: #666;
+        width: 3000px;
+    }
+
+    .main{
+        padding-left: 20px;
+        background-color: antiquewhite;
+        height: 700px;
+        width: 10000px;
+    }
+
+    .imagenes {
+        display: flex;
+        flex-wrap: wrap;    
+    }
+
+    .cimg{
+        width: 25%;
+        margin: 20px;
+    }
+    footer{
+        background-color: aqua;
+        margin: 0px;
+        padding: 10px;
+    }
+
+  
+</style>
+<body>
+    <ul class="menu">
+        <li><img class="logo" src="./img/cruz-home.svg"/></li>
+        <li class="menu2"><a>Home</a></li>
+        <li class="menu2"><a>Contactanos</a></li>
+        <li class="menu2"><a>Sobre Nosotros</a></li>
+    </ul>
+<div class="caja">
+    <div class="row">
+        <h1>Categorias</h1>
+        <ul>
+            <li>Plantas</li>
+            <li><a href="prueba2.html">Macetas</a></li>
+            <li>Decoracion</li>
+            <li>Adornos</li>
+            <li>Recipientes</li>
+        </ul>
+    </div>
+   
+    <div class="main">
+        <h2>Plantas</h2>
+        <p>informacion</p>
+        <div class="imagenes">
+            <img class="cimg" src="img/div1g-2.JPG" alt="img">
+            <img class="cimg" src="img/div1g-1.JPG" alt="img">
+            <img class="cimg" src="img/div1g-1.JPG" alt="img">
+            <img class="cimg" src="img/div1g-1.JPG" alt="img">
+        </div>
+    </div>
+</div>
+    <h1>Formulario</h1>
+    <form>
+      <div>
+    Nombre: <input type="text" value="Escriba su nombre" name="nombre"/><br><br>
+    Apellido: <input type="text" value="Escriba su apellido" name="apellido"/><br><br>
+    Correo: <input type="email" value="Correo" name="correo"/><br><br>
+    Donacion: <input type="number" value="Aportacion" name="donacion"/><br>
+    <div class="cajadere">
+        <h2>Informacion de la donacion</h2><br>
+        Motivo de la donacion: <select>
+            <option>Familia</option>
+            <option>Amigos</option>
+            <option>Pareja</option>
+        </select><br>
+        Frecuencia de la donacion:
+        <select>
+            <option value="Mensual">Mensual</option>
+            <option value="Trimestral">Trimestral</option>
+            <option value="Anueal">Anueal</option>
+        </select><br>
+<h2>Estado del donante</h2>
+        Empleo actual:<br>
+        <input type="radio" name="empleoactual" value="tiempocompleto"> Tiempo completo<br>
+        <input type="radio" name="empleoactual" value="mediodia"> Medio día<br>
+        <input type="radio" name="empleoactual" value="sinempleo"> Sin empleo <br>
+        Intereses:<br>
+        <input type="checkbox" name="cb-autos" value="gusta"> Autos<br>
+        <input type="checkbox" name="cb-deportes" value="gusta"> Deportes<br>
+        <input type="checkbox" name="cb-videojuegos" value="gusta"> Videojuegos<br>
+        edad <input type="number" name="edad"/><br>
+           <input type="submit" value="enviar"/>
+    </div> 
+    </form>
+    </div>
+</div>
+
+
+
+
+<footer>
+    <h1>Contactanos</h1>
+</footer>
+</body>
+</html>
