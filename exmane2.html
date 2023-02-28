@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: burlywood;
+        background-image: url("img/cruzroja.png");
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: right;
+    }
+
+    .menu {
+        padding: 60px;
+        flex-direction: column;
+
+    }
+
+    .letras-menu {
+        text-decoration: none;
+        color: brown;
+    }
+
+    .part1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+
+    }
+
+    .part2 {
+        flex-direction: column;
+        width: 50%;
+     
+
+    }
+
+    .part3 {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    hr {
+
+        border: 2px solid red;
+        width: 100%;
+
+    }
+
+    .divhr {
+        width: 300px;
+    }
+    .part4{
+       margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .div_form{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    form{
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 3%;
+    }
+    option{
+        background-color: aquamarine;
+    }
+    footer{
+        background-color: aquamarine;
+        padding: 20%;
+        text-align: justify;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="menu"><a class="letras-menu" href="./exmen1.html">Quienes somos</a></div>
+        <div class="menu"><a class="letras-menu" href="#contact">Contact</a></div>
+        <div class="menu"><a class="letras-menu" href="https://www2.cruzroja.es/">Donar</a></div>
+    </nav>
+
+    <h1>Noticias</h1>
+    <div class="divhr">
+        <hr>
+    </div>
+    <div class="part1">
+
+        <div class="part2">
+            <h1>Cruz Roja ha atendido a más de 125.000 personas refugiadas en el prim [...]</h1>
+            Más de 48.000 se encuentran en el marco del sistema de acogida e inmigración de la Secretaría de Estado de
+            Migraciones
+        </div>
+        <div class="part3">
+            <h1> Un mundo sin barreras auditivas, la ayuda a personas sin hogar y jóve [...]</h1>
+            Llum, Visualfy y la Academia Solferino son los reconocidos en las categorías ‘Impacto’, ‘Impulso’ y ‘Cruz
+            Roja’, respectivamente
+        </div>
+    </div>
+
+    <div class="part4">
+        <img src="./img/div1g-1.JPG" alt="foto">
+        <img src="./img/div1g-1.JPG" alt="foto">
+        <img src="./img/div1g-1.JPG" alt="foto">
+        <img src="./img/div1g-1.JPG" alt="foto">
+    </div>
+
+    <h1 id="contact">Contacto</h1>
+    <div class="div_form"><form>
+        Nombre: <input type="text" value="Nombre" name="nombre"><br><br>
+        Edad: <input type="number" value="edad" name="edad"><br><br>
+        Checkbox:<br> 
+        1<input type="checkbox" value="opcion1" name="opcion1">
+        2<input type="checkbox" value="opcion2" name="opcion2">
+        2<input type="checkbox" value="opcion2" name="opcion3"><br><br>
+        Radius:<br>
+        1<input type="radio" value="r1" name="r1">
+        2<input type="radio" value="r1" name="r1">
+        3<input type="radio" value="r1" name="r1"><br><br>
+        Select: <select>
+            <option>Seleccion1</option>
+            <option>Seleccion2</option>
+            <option>Seleccion3</option>
+        </select>
+    </form>
+</div>
+<footer>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam recusandae expedita fugit iure quisquam! Possimus, molestias! Corporis atque natus quod, optio officia quis ipsa autem suscipit id quisquam quos a!</h4>
+</footer>
+</body>
+
+</html>
